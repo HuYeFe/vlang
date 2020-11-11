@@ -12,16 +12,16 @@ V是一种非常简单的语言。阅读本文档将花费您大约半小时的�
 
 尽管很简单，但是V给开发人员很大的力量。您可以使用其他语言进行的任何操作，都可以使用V语言进行。
 
-## Table of Contents
+## 目录
 
 <table>
     <tr><td width=33% valign=top>
 
 * [Hello world](#hello-world)
-* [Comments](#comments)
-* [Functions](#functions)
-    * [Returning multiple values](#returning-multiple-values)
-    * [Variable number of arguments](#variable-number-of-arguments)
+* [注释](#注释)
+* [功能](#功能)
+    * [返回多个值](#返回多个值)
+    * [可变数量的参数](#可变数量的参数)
 * [Symbol visibility](#symbol-visibility)
 * [Variables](#variables)
 * [Types](#types)
@@ -113,31 +113,23 @@ fn main() {
 }
 ```
 
-Save this snippet into a file named `hello.v`. Now do: `v run hello.v`.
+将此代码段保存到名为的文件中hello.v。现在执行：v run hello.v。
 
-> That is assuming you have symlinked your V with `v symlink`, as described
-[here](https://github.com/vlang/v/blob/master/README.md#symlinking).
-If you haven't yet, you have to type the path to V manually.
+> 这是假设你已经用V符号链接了V，如所描述[这里](https://github.com/vlang/v/blob/master/README.md#symlinking)。如果还没有，则必须手动键入V的路径。
 
-Congratulations - you just wrote and executed your first V program!
+恭喜-您刚刚编写并执行了您的第一个V程序！
 
-You can compile a program without execution with `v hello.v`.
-See `v help` for all supported commands.
+您可以在不执行的情况下编译程序v hello.v。请参阅v help以获取所有受支持的命令。
 
-From the example above, you can see that functions are declared with the `fn` keyword.
-The return type is specified after the function name.
-In this case `main` doesn't return anything, so the return type can be omitted.
+从上面的示例中，您可以看到使用fn关键字声明了函数。返回类型在函数名称之后指定。在这种情况下main，不返回任何内容，因此可以省略返回类型。
 
-As in many other languages (such as C, Go and Rust), `main` is the entry point of your program.
+与许多其他语言（例如C，Go和Rust）一样，它main是程序的入口点。
 
-`println` is one of the few built-in functions.
-It prints the value passed to it to standard output.
+println是少数几个内置函数之一。它将传递给它的值打印到标准输出。
 
-`fn main()` declaration can be skipped in one file programs.
-This is useful when writing small programs, "scripts", or just learning the language.
-For brevity, `fn main()` will be skipped in this tutorial.
+fn main()声明可以在一个文件程序中跳过。在编写小型程序，“脚本”或仅学习语言时，这很有用。为简便起见，fn main()本教程将跳过。
 
-This means that a "hello world" program in V is as simple as
+这意味着V中的“ hello world”程序就像
 
 ```v
 println('hello world')
